@@ -1,0 +1,129 @@
+/* style css meteo app
+
+* color palette
+panel : rgb(17, 17, 119);
+text color : white;
+app background : white;
+
+*/
+
+/* ! reset  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ! fonts  */
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* general */
+html,
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  background-color: rgb(177, 224, 235);
+}
+
+.container {
+  max-width: 768px;
+  height: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  text-align: center;
+}
+.panel {
+  border-radius: 16px;
+  background-color: rgb(17, 17, 119);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.panel a {
+  padding: 10px;
+}
+
+/* ! header */
+header {
+  text-transform: uppercase;
+}
+
+/* main  */
+.meteo-city {
+  padding: 10px;
+  font-size: 60px;
+  transition: scale 1s;
+}
+
+.meteo-info {
+  padding: 10px;
+  font-size: 30px;
+  transition: scale 1s;
+}
+
+.meteo-info-error {
+  padding: 10px;
+  color: red;
+  font-size: 30px;
+}
+
+.meteo-icon {
+  padding: 10px;
+  width: 60%;
+  transition: opacity 1s, translate 1s;
+}
+
+.meteo-hum {
+  padding: 10px;
+  font-size: 30px;
+  transition: scale 1s;
+}
+
+.meteo-temp {
+  padding: 10px;
+  font-size: 30px;
+  transition: scale 1s;
+}
+
+/* ! footer */
+a {
+  color: orange;
+}
+
+/* ! effects */
+
+.js-loading {
+  .meteo-city {
+    scale: 0;
+  }
+
+  .meteo-info {
+    scale: 0;
+  }
+
+  .meteo-icon {
+    opacity: 0;
+    translate: 0 30px;
+  }
+
+  .meteo-hum {
+    scale: 0;
+  }
+
+  .meteo-temp {
+    scale: 0;
+  }
+}
